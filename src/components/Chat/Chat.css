@@ -1,0 +1,129 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    /* justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100vh;*/
+}
+
+.chat-container {
+    overflow-x: hidden;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    width: 90dvw;
+    height: 100vh;
+    background-color: #494141;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c2c2c;
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.logout-button {
+    padding: 10px;
+    border: none;
+    background-color: #3510bd;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    background-color: #3510bd;
+}
+
+.chat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    justify-content: space-between;
+}
+
+.chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+}
+
+.chat-message {
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.chat-message.user {
+    background-color: #007bff;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+}
+
+.chat-message.bot {
+    background-color: black;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+.message-content {
+    white-space: pre-wrap;
+}
+
+.chat-form {
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid #444;
+    background-color: #1e1e1e;
+}
+
+.chat-form input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+.chat-form input:disabled {
+    background-color: #f0f0f0; /* Light grey background */
+    color: #a0a0a0; /* Grey text color */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+    opacity: 0.6; /* Slightly transparent to indicate it's disabled */
+}
+
+.chat-form button {
+    padding: 15px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.chat-form button:hover {
+    background-color: #0056b3;
+}
