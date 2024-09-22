@@ -187,7 +187,7 @@ const Chat = () => {
             const response = await fetch(url, { signal: newController.signal });
 
             if (!response.ok) {
-                throw new Error("Network response was not ok");
+                throw new Error("There was some error generating a response please try again.");
             }
 
             const reader = response.body.getReader();
@@ -204,7 +204,7 @@ const Chat = () => {
                 }
 
                 if (chunk.includes("Error:")) {
-                    alert("There was an error on the server");
+                    alert("There was some error generating a response please try again.");
                     return;
                 }
 
@@ -216,6 +216,7 @@ const Chat = () => {
             if (error.name === 'AbortError') {
                 console.log("Request was aborted");
             } else {
+                alert(error.message)
                 console.error("Error:", error);
             }
         } finally {
