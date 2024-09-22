@@ -8,7 +8,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
     background-color: #0d1117;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -81,7 +81,7 @@
 
 .main {
     flex-grow: 1;
-    padding: 3rem 0;
+    padding: 1rem 0;
 }
 
 .hero {
